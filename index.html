@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"><title>闲鱼自动化 · 分发包</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <style>body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:700px;margin:60px auto;padding:0 24px;color:#1d2129;line-height:1.8}
 h1{font-size:22px;margin-bottom:6px}.sub{color:#86909c;font-size:13px;margin-bottom:28px}
 .box{background:#f7f8fa;border-left:4px solid #165dff;padding:16px 20px;border-radius:6px;margin:20px 0}
-.dl{display:block;background:#165dff;color:#fff;text-decoration:none;padding:14px 22px;border-radius:8px;text-align:center;font-size:16px;font-weight:600;margin:24px 0}
-.dl:hover{background:#0e42d2}code{background:#e8f1ff;padding:2px 6px;border-radius:4px;font-size:13px}
-.warn{background:#fff7e8;border-left:4px solid #ff7d00;padding:12px 18px;border-radius:6px;margin:20px 0;font-size:13px}
-ol{padding-left:22px}li{margin:6px 0}</style></head>
+.dl{display:block;background:#165dff;color:#fff;text-decoration:none;padding:16px 22px;border-radius:8px;text-align:center;font-size:17px;font-weight:600;margin:24px 0}
+.dl:hover{background:#0e42d2}.dl small{display:block;font-weight:400;font-size:12px;opacity:.85;margin-top:4px}
+code{background:#e8f1ff;padding:2px 6px;border-radius:4px;font-size:13px;word-break:break-all}
+.warn{background:#fff7e8;border-left:4px solid #ff7d00;padding:12px 18px;border-radius:6px;margin:20px 0;font-size:14px}
+ol{padding-left:22px}li{margin:8px 0}.ver{color:#86909c;font-size:12px;margin-top:32px}</style></head>
 <body>
 <h1>闲鱼自动化 · 分发包</h1>
-<div class="sub">只有一个文件，下这个就对了</div>
+<div class="sub">下面这个按钮永远是<strong>最新版</strong>，收藏这个页面就行，不用管版本号。</div>
 
-<a class="dl" href="xianyu-install-20261112-cee87cc-b005710.zip">下载 xianyu-install-20261112-cee87cc-b005710.zip（2.5 MB）</a>
+<a class="dl" href="xianyu-latest.zip">下载最新版<small>xianyu-latest.zip · 约 2.5 MB</small></a>
 
 <div class="box">
 <b>下载后先校验</b>（防止没下全）：<br>
-<code>Get-FileHash .\xianyu-install-20261112-cee87cc-b005710.zip -Algorithm SHA256</code><br>
-和 <a href="xianyu-install-20261112-cee87cc-b005710.zip.sha256">这个 .sha256 文件</a> 里的值逐字对比。
+<code>Get-FileHash .\xianyu-latest.zip -Algorithm SHA256</code><br>
+和 <a href="xianyu-latest.zip.sha256">这个 .sha256 文件</a> 里的值逐字对比。<br>
+<span style="color:#86909c;font-size:12px">当前版本对应 sha256 开头：<code>53c579d297fd2114…</code></span>
 </div>
 
 <div class="warn">
 <b>装之前先做两件事：</b>
 <ol>
 <li><b>关掉 VPN / 系统代理</b> —— 否则闲鱼连不上，表现为「浏览器一直转圈」</li>
-<li><b>确认杀毒软件没拦 node.exe</b> —— 360/火绒会静默阻止它联网</li>
+<li><b>确认杀毒软件没拦 node.exe</b> —— 360/火绒会静默阻止它联网，不弹任何提示</li>
 </ol>
 </div>
 
 <div class="box">
 <b>装：</b>解压 → 双击 <code>install.cmd</code>（详细步骤见包内 <code>install-guide.html</code>）<br>
 <b>用：</b>双击 <code>xianyu-achun\tools\staff-ui\启动.cmd</code> → 网页里配店 → 扫码 → 输入「城市 明星」
+</div>
+
+<div class="ver">
+带版本号的历史包：<a href="xianyu-install-20261112-cee87cc-b005710.zip">xianyu-install-20261112-cee87cc-b005710.zip</a> · <a href="版本.txt">版本.txt</a>
 </div>
 </body></html>
