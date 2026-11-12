@@ -1,4 +1,3 @@
-当前最新版：xianyu-install-20261112-11762d0-b013809.zip
-sha256：3fdb0f5831dc70a5394794d157baecb286443ffab8aa57e2b79f628bfaddd3ed
-固定下载地址：https://achun1107.github.io/xianyu-project/xianyu-latest.zip
-更新时间：2026-11-13 01:39:27
+当前最新版：xianyu-install-20261112-11762d0-b014301.zip
+sha256：b577d3d448af15926869e5e767928ac0f680c79748300da7ee3c32a82b22cb93
+更新时间：2026-11-13 01:44:07
